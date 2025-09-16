@@ -38,6 +38,6 @@ bool cumbersomeFunction()
 
 Which will automatically print out the time spent at the end of function, regardless of the path taken. The accuracy can be chosen between milliseconds and nanoseconds via constructor parameter.
 
-If one wishes to trace a short function that is accessed frequently, more interesting value would be *cumulative measurement over several accesses*. For that there is the CumulativeLifetimer class, which is used insame manner, but it only does a print after certain amount of measurements have been taken. For that method the accuracy is always in nanoseconds. Amount of iterations to take before creating a printout can be set with the static method `setPrintInterval(quint64)`
+If one wishes to trace a short function that is accessed frequently, more interesting value would be *cumulative measurement over several accesses*. For that there is the `CumulativeLifetimer` class, which is used insame manner, but it only does a print after certain amount of measurements have been taken. For that method the accuracy is always in nanoseconds. Amount of iterations to take before creating a printout can be set with the static method `setPrintInterval(quint64)`
 
 Both classes are thread-safe.
